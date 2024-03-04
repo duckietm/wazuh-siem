@@ -1,8 +1,5 @@
 # NitroWebsockets
 
-## What is NitroWebsockets? ##
-NitroWebsockets is a plugin that adds Nitro HTML5 Client compatibility to any hotel running Arcturus MS 3.0.0 and above.
-
 ## How do I configure the plugin?
 Startup the plugin so it generates the required entries under your `emulator_settings` table. The following fields will be generated:
 - `websockets.whitelist` - a comma-delimited list containing all permitted Origin headers. You should write the domain name of your hotel here, since the Websocket connection will be initiated there. Wildcards are also supported, so you can whitelist all subdomains by adding for example: `*.example.com`, do not use whitelist all origins by adding `*` (This will break your websocket due to monitoring)
